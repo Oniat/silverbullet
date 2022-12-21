@@ -862,7 +862,7 @@ export class Editor {
     }, [viewState.uiOptions.darkMode]);
 
     useEffect(() => {
-      // Need to dispatch a resize event so that the top_bar can pick it up
+      // When the panel configuration changes, need to dispatch a resize event so that the top_bar can pick it up
       globalThis.dispatchEvent(new Event("resize"));
     }, [viewState.panels]);
 
